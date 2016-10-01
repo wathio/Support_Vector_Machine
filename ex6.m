@@ -1,29 +1,10 @@
-%% Machine Learning Online Class
-%  Exercise 6 | Support Vector Machines
-%
-%  Instructions
-%  ------------
-% 
-%  This file contains code that helps you get started on the
-%  exercise. You will need to complete the following functions:
-%
-%     gaussianKernel.m
-%     dataset3Params.m
-%     processEmail.m
-%     emailFeatures.m
-%
-%  For this exercise, you will not need to change any code in this file,
-%  or any other files other than those mentioned above.
-%
+%% Machine Learning: Support Vector Machines
 
 %% Initialization
 clear ; close all; clc
 
 %% =============== Part 1: Loading and Visualizing Data ================
-%  We start the exercise by first loading and visualizing the dataset. 
-%  The following code will load the dataset into your environment and plot
-%  the data.
-%
+
 
 fprintf('Loading and Visualizing Data ...\n')
 
@@ -58,9 +39,7 @@ fprintf('Program paused. Press enter to continue.\n');
 pause;
 
 %% =============== Part 3: Implementing Gaussian Kernel ===============
-%  You will now implement the Gaussian kernel to use
-%  with the SVM. You should complete the code in gaussianKernel.m
-%
+
 fprintf('\nEvaluating the Gaussian Kernel ...\n')
 
 x1 = [1 2 1]; x2 = [0 4 -1]; sigma = 2;
@@ -90,9 +69,7 @@ fprintf('Program paused. Press enter to continue.\n');
 pause;
 
 %% ========== Part 5: Training SVM with RBF Kernel (Dataset 2) ==========
-%  After you have implemented the kernel, we can now use it to train the 
-%  SVM classifier.
-% 
+
 fprintf('\nTraining SVM with RBF Kernel (this may take 1 to 2 minutes) ...\n');
 
 % Load from ex6data2: 
@@ -130,9 +107,6 @@ pause;
 
 %% ========== Part 7: Training SVM with RBF Kernel (Dataset 3) ==========
 
-%  This is a different dataset that you can use to experiment with. Try
-%  different values of C and sigma here.
-% 
 
 % Load from ex6data3: 
 % You will have X, y in your environment
